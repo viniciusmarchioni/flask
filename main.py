@@ -334,9 +334,11 @@ def sorteioAconteceu(tableid=str()):
     
 def verifyGuest(cpf=str(), tableID=str()):
     tableID = f'"{tableID}"'
+
+    cursor.execute(f"select cpf from {tableID} where cpf='{cpf}'")
+    resultado = cursor.fetchone()[0]
     try:
-        cursor.execute(f"select cpf from {tableID} where cpf='{cpf}'")
-        resultado = cursor.fetchone()[0]
+        
         return True
     except:
         return False
