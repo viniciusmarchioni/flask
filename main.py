@@ -3,10 +3,10 @@ import psycopg2
 import functions as func
 
 conn = psycopg2.connect(
-    host="isabelle.db.elephantsql.com",
-    database="zlhwkfxk",
-    user="zlhwkfxk",
-    password="5H5djg3N01zMeTkRC3RmnZoFVo9Yia63",
+    host="xxxxxxxxxxxxxxx",
+    database="xxxxxxxxxxxxxx",
+    user="xxxxxxxxxxxxxxxxxxxx",
+    password="xxxxxxxxxxxxxxxxxx",
 )
 
 # Criar um cursor
